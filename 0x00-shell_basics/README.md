@@ -1,1 +1,1 @@
-Ths is my readme file content for shell basics
+This is the readme file content for my new directory in shell basics
