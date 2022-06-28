@@ -1,2 +1,2 @@
 #!/bin/bash
-lp /tmp/iamafile
+lp </12-file_type/tmp/iamafile>
