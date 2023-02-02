@@ -8,12 +8,12 @@ mkdir /etc/nginx/html
 echo "Hello World" > /etc/nginx/html/index.html
 printf %s "server {
     listen 80;
-        listen [::]:80 default_server;
-	    root   /etc/nginx/html;
-	        index  index.html index.htm;
-		    location /redirect_me {
-		            return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-			        }
-		}" > /etc/nginx/sites-enabled/default
+    listen [::]:80 default_server;
+    root   /etc/nginx/html;
+    index  index.html index.htm;
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+}" > /etc/nginx/sites-enabled/default
 
-	sudo service nginx restart
+sudo service nginx restart
